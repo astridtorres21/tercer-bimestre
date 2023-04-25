@@ -1,0 +1,296 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro&display=swap');
+
+*{box-sizing: border-box;
+margin:0;
+padding:0}
+
+header{display:flex;
+    height: 7rem;
+    justify-content: space-between;
+    padding:3em;
+    font-family: 'Be Vietnam Pro', sans-serif;
+    flex-wrap: wrap;
+}
+
+header .boton_mobile{display:none}
+
+header .navegacion a{text-decoration: none;
+    margin: 10px;
+    font-size: 12px;
+    cursor:pointer}
+
+button{background-color: #8B48BF;
+    color:white;
+    padding:.5rem 1.5rem;
+    border-radius: 50vh;
+    border:none;
+    cursor:pointer}
+
+body{font-family: 'Be Vietnam Pro', sans-serif;}
+
+main .home {display:flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding:0 5rem}
+
+main .parte_1_Home {width:600px;
+    height: 300px;
+    display:flex;
+    flex-direction:column;
+    align-items: flex-start;
+    justify-content: space-between;}
+
+
+main .parte_1_Home h1{font-size:6vh;
+                    color:#232C50}
+
+main .parte_2_Home{display: flex;
+    justify-content: center;
+    width: 70vh}
+
+main .parte_2_Home .Grafico{width: 70vh;
+        }
+
+main .Sobre_nosotros{display:flex;
+    justify-content: space-around;
+    padding:0 5rem}
+
+main .Sobre_nosotros .parte_1_Sobre_nosotros{width:600px;
+    }
+
+    main .Sobre_nosotros .parte_1_Sobre_nosotros h2{font-size:6vh;
+        color:#232C50}
+
+main .Sobre_nosotros .Parte_2_Sobre_nosotros{width:650px;
+     
+    }
+
+main .Sobre_nosotros .Parte_2_Sobre_nosotros article {display:flex;
+    margin:.5rem;
+    
+    height:4rem;}
+
+main .Sobre_nosotros .Parte_2_Sobre_nosotros article p {background-color: #8B48BF;
+    width:60px;
+    height: 43px;
+    border-radius: 50vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    color:white}
+
+main .Sobre_nosotros .Parte_2_Sobre_nosotros article .parrafos_intermedios{padding:1rem}
+
+main .Sobre_nosotros .Parte_2_Sobre_nosotros .parrafogris{color:rgba(179, 178, 183, 1);
+padding-left:15%;
+}
+
+main .h2_testimonios{text-align: center;
+    padding:2rem;
+    font-size: 3rem;
+    }
+
+main .Testimonios{display: flex;
+    height: 300px;
+    justify-content: space-around;
+    align-items: center;
+    }
+
+main .Testimonios article{display:flex;
+    flex-direction:column;
+align-items: center;
+padding:0 2.5rem}
+
+
+main .Testimonios article p{color:rgba(179, 178, 183, 1)}
+
+main .boton{text-align: center;
+    margin:0 0 4rem 0}
+footer {
+    position: relative;
+}
+footer .recuadro1{background-color: rgba(139, 72, 191, 1);
+    Height:150px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5rem}
+
+footer .recuadro1 h3{color: white;
+    font-size: 1.5rem;}
+
+footer .recuadro1 button{background-color: white;
+    color:#8B48BF}
+
+footer .recuadro2{background-color: #1E1E26;
+    Height:200px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5rem}
+
+footer .recuadro2 .cubo1 {display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;}
+
+footer .recuadro2 .cubo1 i{color:white;
+    font-size: 1.5rem;
+    margin: .5rem}
+
+footer .recuadro2 .cubo2{width: 400px;
+    display: flex;
+    justify-content: space-between;
+    }
+
+footer .recuadro2 .nav1{display: flex;
+    flex-direction: column;
+}
+
+footer .recuadro2 .nav1 a{text-decoration: none;
+    color:white;
+    margin:.5rem;
+    }
+
+footer .recuadro2 .nav2{display: flex;
+    flex-direction: column;
+}
+
+footer .recuadro2 .nav2 a{text-decoration: none;
+    color:white;
+    margin:.5rem;
+    }
+
+footer .recuadro2 .cubo3{display: flex;
+    flex-direction: column;
+    height: 200px;
+    justify-content: space-between;
+    padding: 2rem 0;
+}
+
+footer .recuadro2 .cubo3 input{width: 201px;
+    height: 44px;
+    border-radius: 50vh;}
+    
+footer .recuadro2 .cubo3 label{color: white;}
+
+footer .copyright{color: #8C8C94;
+    font-size: 12.5px;
+    background-color: #1E1E26;
+    text-align: right;
+    padding: 1rem 2rem}
+
+/* aqui se va a configurar la seccion de mobile */ 
+
+@media(max-width:480px)
+{
+    header{width:100vw;
+        border:solid white;
+        align-items:center;
+        padding:0 2rem;
+    }
+.header i{
+    font-size:  50px;
+}
+
+header .navegacion a{display:none;
+}
+
+header button{display:none;
+}
+
+header .boton_mobile{display:block;
+    font-size: 3rem;
+    flex-direction:column}
+
+    main{border: solid white;}
+
+    main .home{
+        flex-direction: column-reverse;
+        width: 100vw;
+        border: solid white;
+        justify-content: center;
+        padding: 0;
+    }
+    
+    main .home .parte_2_Home{
+    border: solid white;
+    width:80vw;
+    margin:0%;
+    padding:0%;
+    flex-wrap:nowrap;}
+     
+    main .home .parte_2_Home img{width: 80vw;}
+
+    main .home .parte_1_Home{border:solid white;
+    margin:0;
+    width: 80vw;
+    align-items: center;
+    padding: 0%;}
+    
+    main .home .parte_1_Home h1{text-align:center;
+    font-size:40px;
+    width: 90vw;}
+
+    main .home .parte_1_Home p{text-align:center;
+    padding:0 2rem;
+    margin: 0;
+    width: 90vw;}
+
+
+    main .Sobre_nosotros{width: 100vw;
+    flex-direction: column; padding: 0%;
+    margin: 0;border: so;}
+    
+    main .Sobre_nosotros .parte_1_Sobre_nosotros{width:100vw; 
+    margin: 10% 0;}
+
+    main .Sobre_nosotros .parte_1_Sobre_nosotros h2{text-align:center;
+    padding:0 20%;}
+
+    main .Sobre_nosotros .parte_1_Sobre_nosotros p{text-align:center;
+    padding:0 20%;}
+    
+    main .Sobre_nosotros .Parte_2_Sobre_nosotros{width:100vw;border: solid white;}
+    
+    main .Sobre_nosotros .Parte_2_Sobre_nosotros article{border:solid white;
+     width:100vw;
+     padding: 0; 
+     margin: 0;
+     height: 48px; 
+     background-color: rgba(139, 72, 191, 0.3);
+    align-items: center;
+    }
+
+    main .Sobre_nosotros .Parte_2_Sobre_nosotros h3
+
+    main .Sobre_nosotros .Parte_2_Sobre_nosotros .parrafogris{display:inline-block;
+    margin: 5% 0;}
+    
+    main .Testimonios .testimonios_article1{display: none;}
+
+    main .Testimonios .testimonios_article3{display: none;}
+
+    main .h2_testimonios{font-size:35px;}
+
+    footer .recuadro1{flex-direction: column;
+    padding: 0;
+    margin: 0;
+    justify-content: space-around;}
+
+    footer .recuadro1 h3{text-align: center;
+    font-size:25px;}
+
+    footer .recuadro2{flex-direction: column-reverse;
+    height: 25rem;}
+    
+  footer .recuadro2 .cubo1{flex-direction: column-reverse;}
+
+    footer .recuadro2 .cubo1 .logos_Redes{display:flex;
+    justify-content: space-between;
+    width: 80vw; }
+
+  footer .copyright {text-align: center;}
+
+}
